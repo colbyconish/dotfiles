@@ -1,0 +1,6 @@
+require("config.lazy")
+require("config.treesitter")
+require("config.lsp")
+require("config.cmp")
+require("config.mason")
+require("config.gitsigns")
