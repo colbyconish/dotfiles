@@ -9,6 +9,8 @@ vim.cmd("syntax on")
 vim.cmd("set nowrap")
 vim.cmd("set cursorline")
 vim.cmd("set clipboard=unnamedplus")
+vim.cmd("vnoremap < <gv")
+vim.cmd("vnoremap > >gv")
 vim.g.mapleader = ';'
 vim.opt.termguicolors = true
 vim.wo.relativenumber = true
