@@ -15,6 +15,7 @@ vim.g.mapleader = ';'
 vim.opt.termguicolors = true
 vim.wo.relativenumber = true
 vim.wo.number = true
+vim.opt.conceallevel = 2
 
 require("config")
 
