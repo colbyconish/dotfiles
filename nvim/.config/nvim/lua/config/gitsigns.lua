@@ -1,5 +1,7 @@
 local colors = require('config.colors')
 vim.api.nvim_set_hl(0, 'GitSignsChange', {fg = colors.orange})
+vim.api.nvim_set_hl(0, 'GitSignsChangeNr', {fg = colors.orange})
+vim.api.nvim_set_hl(0, 'GitSignsChangeLn', {bg = colors.dark_orange})
 
 require('gitsigns').setup {
   signs = {
@@ -19,16 +21,16 @@ require('gitsigns').setup {
     untracked    = { text = '┆' },
   },
   signs_staged_enable = true,
-  signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
-  numhl      = true, -- Toggle with `:Gitsigns toggle_numhl`
-  linehl     = true, -- Toggle with `:Gitsigns toggle_linehl`
-  word_diff  = true, -- Toggle with `:Gitsigns toggle_word_diff`
+  signcolumn = true,
+  numhl      = true,
+  linehl     = false,
+  word_diff  = true,
   watch_gitdir = {
     follow_files = true
   },
   auto_attach = true,
   attach_to_untracked = false,
-  current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame = true,
   current_line_blame_opts = {
     virt_text = true,
     virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
