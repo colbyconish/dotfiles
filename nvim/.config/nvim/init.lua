@@ -16,8 +16,7 @@ vim.opt.termguicolors = true
 vim.wo.relativenumber = true
 vim.wo.number = true
 vim.opt.conceallevel = 2
+vim.o.laststatus = 3
 
 require("config")
-
-vim.cmd.colorscheme("gruvbox-material")
 vim.notify = require("notify")
