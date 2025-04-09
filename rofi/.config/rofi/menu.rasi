@@ -1,0 +1,92 @@
+* {
+    width: 600;
+    font: "JetBrains Mono Nerd Font 14";
+}
+@import                          "/home/colby/.cache/wal/colors-rofi-dark.rasi"
+element-text, element-icon, mode-switcher {
+    background-color: inherit;
+    text-color: inherit;
+    border-radius: 20px;
+    font: @font;
+}
+
+window {
+    border: 3px;
+    border-color: @urgent-background;
+    background-color: @background;
+    border-radius: 20px;
+    padding: 0px 20px 0px 0px;
+    font: @font;
+}
+
+mainbox {
+    background-color: @background;
+    font: @font;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @background;
+    border-radius: 5px;
+    padding: 2px;
+    font: @font;
+}
+
+prompt {
+    enabled: false;
+    background-color: @border-color;
+    padding: 5px;
+    text-color: @background;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px;
+    font: @font;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+    font: @font;
+}
+
+entry {
+    padding: 0px 5px 8px 5px;  
+    margin: 15px 0px 0px 15px;
+    text-color: @urgent-background;
+    background-color: @background;
+    text-align: center; 
+    line-height: 30px;   
+    font: @font;
+}
+
+listview {
+    border: 0px;
+    padding: 4px 0px 13px;
+    margin: 0px 0px 0px 20px;
+    columns: 1;
+    background-color: @background;
+    fixed-height: false;
+    lines: 7;
+    border-radius: 0px;
+    font: @font;
+}
+
+element {
+    padding: 5px;
+    border-radius: 0px;
+    font: @font;
+    background-color: @urgent-background;
+    text-color: @border-color;
+}
+
+element-icon {
+    size: 25px;
+    font: @font;
+}
+
+element selected.normal {
+    border-radius: 15px;
+    background-color:            var(selected-active-background);
+    text-color:                  var(normal-background);
+    font: @font;
+}

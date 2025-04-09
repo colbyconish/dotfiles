@@ -17,11 +17,7 @@ return {
       {
         name = "projects",
         path = "~/vaults/projects",
-      },
-      {
-        name = "work",
-        path = "~/vaults/work",
-      },
+      }
     },
     ui = {
         hl_groups = {
