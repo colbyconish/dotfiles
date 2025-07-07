@@ -121,7 +121,6 @@ alias vi=nvim
 alias ll='ls -lah'
 
 # init sharship
-SPACESHIP_PROMPT_ASYNC=false
 eval "$(starship init zsh)"
 
 # set pywall colors
