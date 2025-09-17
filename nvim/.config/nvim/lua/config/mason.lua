@@ -1,4 +1,5 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
-    automatic_enable = false
+    ensure_installed = { "lua_ls", "clangd", "bashls", "hyprls" },
+    automatic_enable = true
 }
