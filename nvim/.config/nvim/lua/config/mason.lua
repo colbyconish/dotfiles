@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "basedpyright" },
+    ensure_installed = { "basedpyright", "lua_ls", "clangd", "bashls" },
     automatic_enable = true
 }
 
